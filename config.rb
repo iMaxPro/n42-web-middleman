@@ -11,6 +11,15 @@ activate :external_pipeline,
   latency: 1
 
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
+  # blog.permalink = "blog/{year}/{title}.html"
+  # blog.paginate = true
+  # blog.page_link = "p{num}"
+  # blog.per_page = 2
+end
+
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
