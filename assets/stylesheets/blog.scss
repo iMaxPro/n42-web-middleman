@@ -20,6 +20,12 @@
 }
 
 .n42-article{
+  em{
+    color: black;
+  }
+  a{
+    text-decoration: underline;
+  }
   h1{
     font-size: 3em;
   }
@@ -27,5 +33,14 @@
     background-color: #f5f2f0;
     padding: 1em;
     border-radius: 3px;
+  }
+
+  img+em{
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: grey;
   }
 }
