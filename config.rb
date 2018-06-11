@@ -14,6 +14,7 @@ activate :external_pipeline,
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
+  blog.layout = "article_layout"
   # blog.permalink = "blog/{year}/{title}.html"
   # blog.paginate = true
   # blog.page_link = "p{num}"

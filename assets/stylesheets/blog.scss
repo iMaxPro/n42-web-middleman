@@ -4,9 +4,10 @@
     font-size: 4em;
     margin-left: -3px;
   }
-  
+
   p{
     color: black;
+    font-size: 1.2em;
   }
   a{
     text-decoration: none;
@@ -16,4 +17,15 @@
 
 .article-snippet{
   margin-top: 0px;
+}
+
+.n42-article{
+  h1{
+    font-size: 3em;
+  }
+  pre{
+    background-color: #f5f3ed;
+    padding: 1em;
+    border-radius: 3px;
+  }
 }
