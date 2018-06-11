@@ -14,3 +14,5 @@ UIkit.use(Icons);
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
+
+import prism from 'prismjs';

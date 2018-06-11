@@ -34,13 +34,13 @@ _rbenv_ can easily be installed using the [brew][7] package manager, so make sur
 ### install rbenv and ruby-build using brew
 Install _rbenv_ (for managing _ruby_ environments) by running
 
-	brew install rbenv
+<pre><code class="language-bash">brew install rbenv</code></pre>
 
 this will also install _ruby-build_ tool (for installing versions of _ruby_ via _rbenv_)
 
 If you are upgrading run
 
-	brew upgrade rbenv ruby-build
+<pre><code class="language-bash">brew upgrade rbenv ruby-build</code></pre>
 
 ### setup rbenv for your shell
 
@@ -48,7 +48,7 @@ After installing the tools above, you need to add a call to setup _rbenv_ to you
 
 You can find out which shell you are using by calling
 
-	echo $0
+<pre><code class="language-bash">echo $0</code></pre>
 
 Depending on the result, you need to either change _\~/.bash\_profile_ (for bash), _\~/.zshrc_ (for zsh) or the corresponding file of your shell if you have another shell.
 
@@ -56,11 +56,11 @@ If the file (e.g. _\~/.bash\_profile_) does not exist before, just create it.
 
 As we use the very good [Oh-My-ZSH][8] as shell, we can edit it by opening _\~/.zshrc_ in a graphical text editor or edit it directly in the shell by calling
 
-	nano ~/.zshrc
+<pre><code class="language-bash">nano ~/.zshrc</code></pre>
 
 Add
 
-	eval "$(rbenv init -)"
+<pre><code class="language-bash">eval "$(rbenv init -)"</code></pre>
 
 to the end of the file and save it, then quit your terminal application and reopen it to make sure the changes are applied.
 
@@ -68,7 +68,7 @@ to the end of the file and save it, then quit your terminal application and reop
 ## rbenv commands
 rbenv has various commands, which should be listed when you run
 
-	rbenv help
+<pre><code class="language-bash">rbenv help</code></pre>
 
 The most important for us in the scope of this article are:
 
@@ -103,19 +103,19 @@ _rbenv which_ and _rbenv whence_ are useful if you have issues when using ruby v
 
 Start by installing the newest version, which is 2.5.1 at the time of this post:
 
-	rbenv install 2.5.1
+<pre><code class="language-bash">rbenv install 2.5.1</code></pre>
 
 See https://www.ruby-lang.org/en/downloads/ for the most recent version.
 
 If there already is a _.ruby-version_ file, run
 
-	rbenv install
+<pre><code class="language-bash">rbenv install</code></pre>
 
 without any version argument to install the version set in the _.ruby-version_ file.
 
 Enter your iOS project directory and run
 
-	rbenv local 2.5.1
+<pre><code class="language-bash">rbenv local 2.5.1</code></pre>
 
 to create a _.ruby-version_ file with the content `2.5.1`.
 
@@ -124,6 +124,7 @@ _rbenv local_ will only do this, if the version is already installed.
 After restarting the terminal (or entering the parent directory and reentering the directory), running `rbenv version` should give you the version  `2.5.1` if everything worked correctly.
 
 ## How to use Bundler
+
 ### What is Bundler?
 
 _bundler_ is a dependency manager for _ruby_, as _cocoapods_ is for the iOS ecosystem.
@@ -133,7 +134,7 @@ It can ensure that a defined set of dependencies is installed with the exact ver
 
 For every ruby version installed via rbenv, you have to once run
 
-	gem install bundler
+<pre><code class="language-bash">gem install bundler</code></pre>
 
 to install the dependency manager.
 
@@ -143,8 +144,9 @@ Bundler defines dependencies using a _Gemfile_.
 
 This defines, what _gems_ (and possibly: what versions) you __want__ to have installed:
 
-	# List of gems used in this project
-	gem "cocoapods", "~> 1.5"
+<pre><code class="language-bash"># List of gems used in this project
+gem "cocoapods", "~> 1.5"
+</code></pre>
 
 When updating gems (or adding them to the project), the exact version of the gem that __will__ be installed is written to a file named _Gemfile.lock_.
 
@@ -152,23 +154,23 @@ When updating gems (or adding them to the project), the exact version of the gem
 
 When you do not have a _Gemfile_ yet, you can create one by running
 
-	bundle init
+<pre><code class="language-bash">bundle init</code></pre>
 
 To add a first dependency, you can run `bundle add <Gemname>`, e.g.
 
-	bundle add fastlane
+<pre><code class="language-bash">bundle add fastlane</code></pre>
 
 This adds the dependency to the Gemfile and installs the new dependency.
 
 Running
 
-	bundle install
+<pre><code class="language-bash">bundle install</code></pre>
 
 resolves the dependency graph in the _Gemfile_, installs the dependencies and writes the resolved versions to the _Gemfile.lock_ file. This is important if you edit the _Gemfile_ by hand.
 
 You should now be able to run
 
-	bundle exec fastlane
+<pre><code class="language-bash">bundle exec fastlane</code></pre>
 
 if everything went right.
 
