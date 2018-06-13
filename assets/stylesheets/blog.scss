@@ -20,6 +20,12 @@
 }
 
 .n42-article{
+  h1{
+    font-size: 3em;
+  }
+  h3{
+    font-size: 1.4em;
+  }
   // color: black;
   :not(pre) > code{
     background-color: #f5f2f0;
@@ -28,16 +34,14 @@
     color: #666;
   }
   strong{
-    font-weight: bold;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: normal;
   }
   em{
     color: black;
   }
   a{
     text-decoration: underline;
-  }
-  h1{
-    font-size: 3em;
   }
   .highlight{
     pre {
