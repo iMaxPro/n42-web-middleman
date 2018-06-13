@@ -19,3 +19,5 @@ gem "nokogiri"
 # Syntaxhighlighting
 gem "redcarpet"
 gem "middleman-syntax"
+
+gem "builder"
