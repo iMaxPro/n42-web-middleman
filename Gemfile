@@ -15,3 +15,7 @@ gem "nokogiri"
 # source 'https://rails-assets.org' do
 #   gem 'rails-assets-jquery'
 # end
+
+# Syntaxhighlighting
+gem "redcarpet"
+gem "middleman-syntax"

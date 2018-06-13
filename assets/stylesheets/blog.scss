@@ -20,6 +20,16 @@
 }
 
 .n42-article{
+  // color: black;
+  :not(pre) > code{
+    background-color: #f5f2f0;
+    border-radius: 3px;
+    padding: 3px;
+    color: #666;
+  }
+  strong{
+    font-weight: bold;
+  }
   em{
     color: black;
   }
@@ -29,9 +39,11 @@
   h1{
     font-size: 3em;
   }
-  pre{
-    background-color: #f5f2f0;
-    padding: 1em;
+  .highlight{
+    pre {
+      padding: 1em;
+      background-color: #f5f2f0;
+    }
     border-radius: 3px;
   }
 

@@ -15,4 +15,4 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-import prism from 'prismjs';
+// import prism from 'prismjs';

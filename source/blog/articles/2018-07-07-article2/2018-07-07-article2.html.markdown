@@ -5,9 +5,13 @@ summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
 
 # This is article two
 
+```css
+p { color: red }
+```
 
-<pre><code class="language-css">p { color: red }</code></pre>
-<pre><code class="language-Javascript">let name = "something"
+
+```javascript
+let name = "something"
 
 function dothings(){
   let a = [a,v,c];
@@ -15,6 +19,16 @@ function dothings(){
     return item;
   });
 }
-</code></pre>
+```
+
+```javascript
+let a = 4;
+```
+
+```ruby
+def my_cool_method(message)
+  puts message
+end
+```
 
 ![](plant.jpg)
