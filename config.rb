@@ -3,6 +3,13 @@
 
 activate :livereload
 
+# Syntaxhighlighting
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+#rss feed
+Time.zone = "Berlin"
 
 activate :external_pipeline,
   name: :webpack,
@@ -10,6 +17,16 @@ activate :external_pipeline,
   source: ".tmp/dist/source",
   latency: 1
 
+
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
+  blog.layout = "article_layout"
+  # blog.permalink = "blog/{year}/{title}.html"
+  # blog.paginate = true
+  # blog.page_link = "p{num}"
+  # blog.per_page = 2
+end
 
 
 # Layouts

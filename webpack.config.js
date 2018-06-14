@@ -24,6 +24,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.erb$/,
+        loader: 'rails-erb-loader',
+        options: {
+          runner: 'ruby',
+          engine: 'erb'
+        }
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"

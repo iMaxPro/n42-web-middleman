@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,1 C7.44771525,1 7,1.44771525 7,2 L7,30 C7,30.5522847 7.44771525,31 8,31 L24,31 C24.5522847,31 25,30.5522847 25,30 L25,2 C25,1.44771525 24.5522847,1 24,1 L8,1 Z M8,0 L24,0 C25.1045695,-2.02906125e-16 26,0.8954305 26,2 L26,30 C26,31.1045695 25.1045695,32 24,32 L8,32 C6.8954305,32 6,31.1045695 6,30 L6,2 C6,0.8954305 6.8954305,2.02906125e-16 8,0 Z" id="Rectangle-43" fill="#D24335" fill-rule="nonzero"></path>
+        <path d="M9,6 L9,25 L23,25 L23,6 L9,6 Z M8,5 L24,5 L24,26 L8,26 L8,5 Z" id="Rectangle" fill="#D24335" fill-rule="nonzero"></path>
+        <rect id="Rectangle-44" fill="#D24335" x="14" y="3" width="4" height="1" rx="0.5"></rect>
+        <path d="M16.5,29.7711114 C15.6715729,29.7711114 15,29.0995385 15,28.2711114 C15,27.4426843 15.6715729,26.7711114 16.5,26.7711114 C17.3284271,26.7711114 18,27.4426843 18,28.2711114 C18,29.0995385 17.3284271,29.7711114 16.5,29.7711114 Z M16.5,28.7711114 C16.7761424,28.7711114 17,28.5472538 17,28.2711114 C17,27.994969 16.7761424,27.7711114 16.5,27.7711114 C16.2238576,27.7711114 16,27.994969 16,28.2711114 C16,28.5472538 16.2238576,28.7711114 16.5,28.7711114 Z" id="Combined-Shape" fill="#D24335" fill-rule="nonzero"></path>
+    </g>
+</svg>

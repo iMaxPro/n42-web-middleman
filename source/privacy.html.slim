@@ -4,20 +4,11 @@ robots: noindex
 preview_image: logo_512.png
 preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung. Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 ---
-
-
-div uk-sticky=''
-  nav class="uk-navbar-container n42-navbar" uk-navbar=''
-    div.uk-navbar-left
-      ul.uk-navbar-nav
-        li
-          a href="index.html"
-            = image_tag "logo.svg", alt: "Number42"
-
+= partial 'nav'
 
 section.uk-section
   div.uk-container
-    h1 Datenschutzerklärung
+    h2 Datenschutzerklärung
     h2 Allgemeines
     p Die Einhaltung der Datenschutzgesetze ist für die Number42 GmbH, nicht nur gesetzliche Pflicht, sondern auch ein wichtiger Vertrauensfaktor. Mit den nachfolgenden Datenschutzbestimmungen möchten wir Sie deshalb transparent über Art, Umfang und Zweck der von Ihnen erhobenen und verarbeiteten personenbezogenen Daten innerhalb dieses Internetauftrittes sowie Ihre Rechte informieren.
     h2 Verantwortlichkeit für die Datenverarbeitung
@@ -25,19 +16,19 @@ section.uk-section
     h3 Datenschutzbeauftragter
     p
       | Verantwortlicher Datenschutzbeauftragter ist:
-      <br />
+      br
     p style='padding-left: 2em'
       strong Süddeutsche Datenschutzgesellschaft mbH
-      <br />
+      br
       | Ansprechpartner Maximilian Mayer
-      <br />
+      br
       | Von-Brettreich-Straße 4
-      <br />
+      br
       | 93049 Regensburg
-      <br />
+      br
       | Tel:
       a href="tel:+4994183096238"  +49 (0) 941 - 83096238
-      <br />
+      br
       | Mail: service(at)sddsg.de
     h3 Ihre Rechte als betroffene Person
     p Als betroffene Person haben Sie uns gegenüber folgende Rechte hinsichtlich Ihrer personenbezogenen Daten. Sie haben:
@@ -120,6 +111,6 @@ section.uk-section
     /p Die Rechtsgrundlage für die Nutzung von Google Analytics ist Art. 6 Abs. 1 S. 1 Buchstabe f) DSGVO (Berechtigtes Interesse an der Datenverarbeitung). Das berechtigte Interesse ergibt sich aus unserem Bedarf an einer anonymen Auswertung des Nutzungsverhaltens auf unserer Webseite zur nutzerorientierten Verbesserung der Gestaltung unseres Online-Angebots.
     p
       | Stand der Datenschutzerklärung: 24.5.2018
-      <br />
+      br
       | Quelle:&#32;
       <a href="https://www.sddsg.de" rel="noopner" target="_blank">Süddeutsche Datenschutzgesellschaft mbH</a>.
