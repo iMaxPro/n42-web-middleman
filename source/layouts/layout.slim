@@ -5,6 +5,8 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1" name="viewport"
     link rel="shortcut icon" href="#{image_path('favicon.png')}"
+    link rel="alternate" type="application/rss+xml" title="Number42 Blog" href="http://www.number42.de/blog/feed.rss"
+
     title= current_page.data.title || "Number42"
     - if current_page.data.robots.present?
       meta name="robots" content=current_page.data.robots
@@ -14,7 +16,7 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     = stylesheet_link_tag "main.bundle"
     = javascript_include_tag "main.bundle"
     = javascript_include_tag "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js", "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
-  
+
 
 
   body class=page_classes
@@ -25,8 +27,8 @@ html lang="en" prefix="og: http://ogp.me/ns#"
         div.uk-section.uk-text-center.uk-section-muted
          div.uk-container.uk-margin-top
             p
-              = link_to "Impressum", "imprint.html"
+              = link_to "Impressum", "/imprint.html"
               |&nbsp;|&nbsp;
-              = link_to "Datenschutzerklärung", "privacy.html"
+              = link_to "Datenschutzerklärung", "/privacy.html"
               br
               | Made with <span uk-icon="icon: heart; ratio: 0.7"></span> in Bavaria
