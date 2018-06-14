@@ -9,6 +9,10 @@
 
 $red-color: #D24335;
 
+a:active, a:hover {
+  color: #D24335 !important;
+}
+
 .icon_quick_fix {
   width: 60px;
   height: 60px;

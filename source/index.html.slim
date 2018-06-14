@@ -4,45 +4,16 @@ preview_image: images/og_image.png
 preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung. Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 ---
 
-nav.uk-navbar.uk-navbar-container.n42-navbar.n42-mobile-nav uk-navbar='' uk-sticky='' class="uk-hidden@m"
+nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar='' uk-sticky=''
   div.uk-navbar-left
     = link_to 'index.html', class:'uk-navbar-item uk-logo' do
       = image_tag 'logo.svg', style:'width: 120px'
-  div.uk-navbar-right
+  
+  div.uk-navbar-right class="uk-hidden@m"
     a class="uk-navbar-toggle uk-navbar-toggle-icon" uk-toggle="" uk-navbar-toggle-icon=true href="#offcanvas-slide"
-
-#offcanvas-slide uk-offcanvas="overlay: true; flip: true;"
-  .uk-offcanvas-bar
-    ul.uk-nav.uk-nav-default.collapsable#nav
-      li
-        a href="#leistungen" uk-scroll='duration: 200; offset: 40'
-          | Leistungen
-      li
-        a href="#team" uk-scroll='duration: 200; offset: 40'
-          | Team
-      li
-        a href="#jobs" uk-scroll='duration: 200; offset: 40'
-          | Jobs
-      li
-        a href="#prozess" uk-scroll='duration: 200; offset: 40'
-          | Prozess
-      li
-        a href="#stacks" uk-scroll='duration: 300; offset: 40'
-          | 42Stacks
-      li
-        = link_to "Referenzen", "referenzen.html"
-      li
-        a href="#kontakt" uk-scroll='duration: 300; offset: 40'
-          | Kontakt
-
-
-nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar="" uk-sticky='' class="uk-visible@m"
-  div.uk-navbar-left
-    = link_to 'index.html', class:'uk-navbar-item uk-logo' do
-      = image_tag 'logo.svg', style:'width: 160px'
-
-  div.uk-navbar-right
-    ul.uk-nav.uk-navbar-nav#nav class="uk-visible@m"
+    
+  div.uk-navbar-right class="uk-visible@m"
+    ul.uk-nav.uk-navbar-nav#nav
       li
         a href="#leistungen" uk-scroll='duration: 200; offset: 20'
           | Leistungen
@@ -50,20 +21,34 @@ nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar="" uk-sticky='' class="uk
         a href="#team" uk-scroll='duration: 200; offset: 20'
           | Team
       li
-        a href="#jobs" uk-scroll='duration: 200; offset: 20'
-          | Jobs
+        a href="#stacks" uk-scroll='duration: 300; offset: 20'
+          | 42Stacks
       li
-        a href="#prozess" uk-scroll='duration: 200; offset: 20'
-          | Prozess
+        = link_to "Referenzen", "referenzen.html"
+      li
+        = link_to "Jobs", "jobs.html"
+      li
+        a href="#kontakt" uk-scroll='duration: 300; offset: 20'
+          | Kontakt
+#offcanvas-slide uk-offcanvas="overlay: true; flip: true;"
+  .uk-offcanvas-bar
+    ul.uk-nav.uk-nav-default.collapsable#nav
+      li
+        a href="#leistungen" uk-scroll='duration: 200; offset: 20'
+          | Leistungen
+      li
+        a href="#team" uk-scroll='duration: 200; offset: 20'
+          | Team
       li
         a href="#stacks" uk-scroll='duration: 300; offset: 20'
           | 42Stacks
       li
         = link_to "Referenzen", "referenzen.html"
       li
+        = link_to "Jobs", "jobs.html"
+      li
         a href="#kontakt" uk-scroll='duration: 300; offset: 20'
           | Kontakt
-
 
 div.uk-cover-container.n42-height-large.n42-red-border.n42-hero
   div#cover
