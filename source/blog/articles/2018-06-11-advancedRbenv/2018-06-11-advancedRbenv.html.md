@@ -1,6 +1,6 @@
 ---
 title: "Better iOS Projects: Advanced Usages of rbenv"
-summary: 'In the series "Better iOS Projects", we have a look at the various tools and environments that are useful to have a more convenient and efficient handling of iOS Projects. After we learnt to install and use rbenv and bundler in the previous post of the series "Better iOS Projects", "How to manage the ruby environment of your iOS Project using rbenv", we learnt to install and use rbenv and bundler. Now we have a look at some of the more advanced features and pitfalls of using rbenv and bundler.'
+summary: 'In the series "Better iOS Projects", we have a look at the various tools and environments that are useful to have a more convenient and efficient handling of iOS Projects. After we learnt to install and use rbenv and bundler in the previous post of the series "Better iOS Projects", "How to manage the ruby environment of your iOS Project using rbenv", we learnt to install and use rbenv and bundler. Now we have a look at some of the more advanced features and pitfalls of using rbenv and bundler…'
 headerImage: '2018-06-11-advancedRbenv/assets/Ruby_1_cut.jpg'
 ---
 # Better iOS Projects: Advanced Usages of rbenv
@@ -21,38 +21,48 @@ After we learnt to install and use _rbenv_ and _bundler_ in the previous post of
 
 To ensure that the correct versions of gems are used inside a ruby script, you need to require _rubygems_ and _bundler/setup_ at the top of the script:
 
-	#!/usr/bin/ruby
+```ruby
+#!/usr/bin/ruby
 
-	# Non-Bundler Dependencies
-	require 'optparse'
-	require 'ostruct'
+# Non-Bundler Dependencies
+require 'optparse'
+require 'ostruct'
 
-	# Support for Bundler and Gems
-	require 'rubygems'
-	require 'bundler/setup'
+# Support for Bundler and Gems
+require 'rubygems'
+require 'bundler/setup'
 
-	# Now, the version of xcodeproj defined via Bundler is used
-	require 'xcodeproj'
+# Now, the version of xcodeproj defined via Bundler is used
+require 'xcodeproj'
+```
 
 ### Using binstubs
 
 To ensure that all calls use the version defined in the _Gemfile_ without prefixing the call with `bundle exec`, you can append `--binstubs` along with the gems to stub to the installation command:
 
-	bundle install --binstubs fastlane
+```bash
+bundle install --binstubs fastlane
+```
 
 It is recommended to explicitly name the gems you want to stub to avoid conflicts with gems that deliver their own stubs, e.g. _rake_.
 
 Then, you can call the command by prepending `bin/`, e.g.
 
-	bin/fastlane
+```bash
+bin/fastlane
+```
 
 You can also add `export PATH="./bin:$PATH"` to your shell's rc file (see above) to always search the bin folder (where binstubs are installed to) when running commands. This might have [security implications](https://github.com/rbenv/rbenv/wiki/Understanding-binstubs) though. I you do this, it is enough to type
 
-	fastlane
+```bash
+fastlane
+```
 
 As an alternative to binstubs, you can also add the alias `alias be="bundle exec"` to your .rc file, to make the original call shorter:
 
-	be fastlane
+```bash
+be fastlane
+```
 
 ## Bonus: How to automate installing the correct ruby version and gems
 
@@ -60,60 +70,62 @@ At Number42, we always include a script called [bootstrap.sh](https://github.com
 
 Among those are the installation of _ruby_, _Bundler_ and _Gems_:
 
-	#!/bin/sh
+```sh
+#!/bin/sh
 
-	# exit script on error
-	set -e
+# exit script on error
+set -e
 
-	# define colors
-	RED=`tput setaf 1`
-	GREEN=`tput setaf 2`
-	NOCOLOR=`tput sgr0`
+# define colors
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+NOCOLOR=`tput sgr0`
 
-	# Guard to update brew only once and only if necessary
-	NEEDS_TO_UPDATE_BREW=1
+# Guard to update brew only once and only if necessary
+NEEDS_TO_UPDATE_BREW=1
 
-	# Helper to install brew dependencies
-	installDependencyWithBrew(){
-	  if [ $NEEDS_TO_UPDATE_BREW -eq 1 ]; then
-	    echo ""
-	    echo  "${GREEN} UPDATING BREW ${NOCOLOR}";
+# Helper to install brew dependencies
+installDependencyWithBrew(){
+  if [ $NEEDS_TO_UPDATE_BREW -eq 1 ]; then
+    echo ""
+    echo  "${GREEN} UPDATING BREW ${NOCOLOR}";
 
-	    # update brew to keep dependencies up to date
-	    brew update || echo "${RED} FAILED TO UPDATE BREW ${NOCOLOR}";
-	    NEEDS_TO_UPDATE_BREW=0
-	  fi
+    # update brew to keep dependencies up to date
+    brew update || echo "${RED} FAILED TO UPDATE BREW ${NOCOLOR}";
+    NEEDS_TO_UPDATE_BREW=0
+  fi
 
-	  echo ""
-	  echo  "${GREEN} INSTALLING $1 WITH BREW ${NOCOLOR}";
+  echo ""
+  echo  "${GREEN} INSTALLING $1 WITH BREW ${NOCOLOR}";
 
-	  # install dependency, if is not installed
-	  brew list $1 || brew install $1 || echo "${RED} FAILED TO INSTALL $1 ${NOCOLOR}";
+  # install dependency, if is not installed
+  brew list $1 || brew install $1 || echo "${RED} FAILED TO INSTALL $1 ${NOCOLOR}";
 
-	  # upgrade dependency, if it is outdated
-	  brew outdated $1 || brew upgrade $1 || echo "${RED} FAILED TO UPGRADE $1 ${NOCOLOR}";
-	}
+  # upgrade dependency, if it is outdated
+  brew outdated $1 || brew upgrade $1 || echo "${RED} FAILED TO UPGRADE $1 ${NOCOLOR}";
+}
 
-	# Install ruby if a .ruby-version exists
-	if [ -e ".ruby-version" ]; then
-	  echo ""
-	  echo  "${GREEN} SETTING UP RUBY ${NOCOLOR}";
+# Install ruby if a .ruby-version exists
+if [ -e ".ruby-version" ]; then
+  echo ""
+  echo  "${GREEN} SETTING UP RUBY ${NOCOLOR}";
 
-	  installDependencyWithBrew rbenv
-	  installDependencyWithBrew ruby-build
-	  # install ruby version from .ruby-version, skipping if already installed (-s)
-	  rbenv install -s
-	fi
+  installDependencyWithBrew rbenv
+  installDependencyWithBrew ruby-build
+  # install ruby version from .ruby-version, skipping if already installed (-s)
+  rbenv install -s
+fi
 
-	# Install gems if a Gemfile exists
-	if [ -e "Gemfile" ]; then
-	  echo ""
-	  echo  "${GREEN} INSTALLING GEMS ${NOCOLOR}";
+# Install gems if a Gemfile exists
+if [ -e "Gemfile" ]; then
+  echo ""
+  echo  "${GREEN} INSTALLING GEMS ${NOCOLOR}";
 
-	  # install bundler gem for ruby dependency management
-	  gem install bundler --no-document || echo "${RED} FAILED TO INSTALL BUNDLER ${NOCOLOR}";
-	  bundle install || echo "${RED} FAILED TO INSTALL BUNDLE ${NOCOLOR}";
-	fi
+  # install bundler gem for ruby dependency management
+  gem install bundler --no-document || echo "${RED} FAILED TO INSTALL BUNDLER ${NOCOLOR}";
+  bundle install || echo "${RED} FAILED TO INSTALL BUNDLE ${NOCOLOR}";
+fi
+```
 
 ## Glossary
 
