@@ -9,6 +9,11 @@
 
 $red-color: #D24335;
 
+.icon_quick_fix {
+  width: 60px;
+  height: 60px;
+}
+
 html,body{
   height: 100%;
 }
@@ -38,7 +43,7 @@ a{
 
 .n42-hero-text{
   left: 10%;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   position: absolute;
 }
@@ -95,29 +100,75 @@ body {
   text-shadow:  2px 2px 4px #00000033, 2px 2px 15px #00000069;
 }
 
-.n42-height-large{
+#cover {
+  background:url(/images/cover_xl.jpg) no-repeat center;
+  margin-top: 80px;
+  background-size: cover;
   height: 700px;
+  position: relative;
+  h1 {font-size: 3em;}
 }
-@media (max-width: 940px){
-  .n42-height-large{
+
+@media (max-width: 1280px){
+  #cover {
+    background: url(/images/cover_l.jpg) no-repeat center;
+    margin-top: 80px;
+    background-size: cover;
     height: 600px;
+    h1{font-size: 2.2em;}
+  }
+  .n42-hero-text{
+    left: 7%;
+    top: 55%;
+  }
+}
+
+@media (max-width: 940px){
+  #cover {
+    background: url(/images/cover_m.jpg) no-repeat center;
+    margin-top: 80px;
+    background-size: cover;
+    height: 500px;
+    h1{font-size: 1.8em;}
+  }
+  .n42-hero-text{
+    left: 3%;
+    top: 55%;
   }
 }
 @media (max-width: 600px){
   .n42-hero h1{
     font-size: 2.5em;
   }
-  .n42-height-large{
-    height: 500px;
+  #cover {
+    background: url(/images/cover_s.jpg) no-repeat center;
+    margin-top: 80px;
+    background-size: cover;
+    height: 350px;
+    h1{font-size: 1.5em;}
   }
+  .n42-hero-text{
+    left: 3%;
+    top: 66%;
+  }
+  br.with_margin {font-size: 35px !important;}
 }
 @media (max-width: 400px){
   .n42-hero h1{
     font-size: 2em;
   }
-  .n42-height-large{
-    height: 300px;
+  #cover {
+    background: url(/images/cover_xs.jpg) no-repeat center;
+    height: 200px;
+    margin-top: 80px;
+    background-size: cover;
+    h1{font-size: 1.2em;}
   }
+  .n42-hero-text{
+    left: 0%;
+    top: 52%;
+  }
+  br.with_margin {font-size: 30px !important;}
 }
 
 .n42-avatar h2{

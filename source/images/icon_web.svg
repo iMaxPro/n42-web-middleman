@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_web</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1,6 L1,23 L31,23 L31,6 L1,6 Z M0,5 L32,5 L32,24 L0,24 L0,5 Z" id="Rectangle" fill="#D24335" fill-rule="nonzero"></path>
+        <rect id="Rectangle-2" fill="#D24335" x="14" y="24" width="1" height="3"></rect>
+        <rect id="Rectangle-2" fill="#D24335" x="18" y="24" width="1" height="3"></rect>
+        <rect id="Rectangle-2" fill="#D24335" x="11" y="26" width="10.4853708" height="1"></rect>
+    </g>
+</svg>
