@@ -122,7 +122,7 @@ body {
   background-size: cover;
   height: 700px;
   position: relative;
-  h1 {font-size: 3em;}
+  h1 {font-size: 3em; margin: 0}
 }
 
 @media (max-width: 1280px){
@@ -151,14 +151,11 @@ body {
   }
 }
 @media (max-width: 639px){
-  .n42-hero h1{
-    font-size: 2.5em;
-  }
   #cover {
     background: url(/images/cover_s.jpg) no-repeat center;
     background-size: cover;
     height: 350px;
-    h1{font-size: 1.5em;}
+    h1{font-size: 1.5em; margin: 0.7em;}
   }
   .n42-hero-text{
     left: 3%;
@@ -167,14 +164,11 @@ body {
   br.with_margin {font-size: 35px !important;}
 }
 @media (max-width: 400px){
-  .n42-hero h1{
-    font-size: 2em;
-  }
   #cover {
     background: url(/images/cover_xs.jpg) no-repeat center;
     height: 200px;
     background-size: cover;
-    h1{font-size: 1.2em;}
+    h1{font-size: 1.2em; margin: 0.5em;}
   }
   .n42-hero-text{
     left: 0%;
