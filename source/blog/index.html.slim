@@ -6,12 +6,12 @@
 
 div.uk-container.n42-blog
   div.uk-flex-center uk-grid=''
-    div.uk-width-2-3
+    div class="uk-width-2-3@l uk-width-1-1"
       h1.uk-margin-medium-top.uk-margin-small-bottom Blog
       h2.uk-margin-remove-top.uk-margin-large-bottom These are the tales of our everyday findings in the wide realm of IT and Technology. We make Apps for iOS, Android and the web - and talk about it.
 
       - blog.articles.each do |article|
-        div.article-snippet.uk-margin-large-bottom
+        div.article-snippet.uk-margin-large-bottom.mt10
           = link_to article do
             div.uk-cover-container
               canvas width="400" height="200"
