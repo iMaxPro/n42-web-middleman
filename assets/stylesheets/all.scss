@@ -122,7 +122,18 @@ body {
   background-size: cover;
   height: 700px;
   position: relative;
-  h1 {font-size: 3em; margin: 0}
+  h1 {font-size: 4.2em; margin: 0}
+}
+
+@media (max-width: 1920px){
+  #cover {
+    height: 700px;
+    h1{font-size: 3em;}
+  }
+  .n42-hero-text{
+    left: 10%;
+    top: 60%;
+  }
 }
 
 @media (max-width: 1280px){
