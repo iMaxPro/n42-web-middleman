@@ -3,6 +3,8 @@ title: "Better iOS Projects: Advanced Usages of rbenv"
 summary: 'In the series "Better iOS Projects", we have a look at the various tools and environments that are useful to have a more convenient and efficient handling of iOS Projects. After we learnt to install and use rbenv and bundler in the previous post of the series "Better iOS Projects", "How to manage the ruby environment of your iOS Project using rbenv", we learnt to install and use rbenv and bundler. Now we have a look at some of the more advanced features and pitfalls of using rbenv and bundler…'
 headerImage: '2018-06-11-advancedRbenv/assets/Ruby_1_cut.jpg'
 ---
+_June 11, 2018, by [Wolfgang Lutz](https://number42.de/#team)_
+
 # Better iOS Projects: Advanced Usages of rbenv
 
 ![](assets/Ruby_1_cut.jpg)
@@ -15,7 +17,7 @@ You should not have to use root user permissions via _sudo_ for any of the calls
 
 ## Advanced Usages of rbenv
 
-After we learnt to install and use _rbenv_ and _bundler_ in the previous post of the series "Better iOS Projects", [How to manage the ruby environment of your iOS Project using rbenv](https://medium.com/number42de/ios-projects-done-right-how-to-manage-the-ruby-environment-of-your-ios-project-using-rbenv-fafac4f32d3f), we learnt to install and use _rbenv_ and _bundler_. Now we have a look at some of the more advanced features and pitfalls of using _rbenv_ and _bundler_.
+After we learnt to install and use _rbenv_ and _bundler_ in the previous post of the series "Better iOS Projects", [How to manage the ruby environment of your iOS Project using rbenv](https://number42.de/blog/2018/05/22/rbenv-2018-05-22-rbenv.html), we learnt to install and use _rbenv_ and _bundler_. Now we have a look at some of the more advanced features and pitfalls of using _rbenv_ and _bundler_.
 
 ### How do I use bundler in _ruby_-scripts?
 
