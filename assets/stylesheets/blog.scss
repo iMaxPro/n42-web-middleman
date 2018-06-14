@@ -1,17 +1,28 @@
 .blog{
+  h1,h2{
+    font-family: "Roboto-Medium";
+  }
+
   h1{
     color: black;
     font-size: 4em;
-    margin-left: -3px;
   }
 
   p{
     color: black;
     font-size: 1.2em;
+    &.time{
+      font-style: italic;
+    }
   }
+
   a{
     text-decoration: none;
     color: black;
+  }
+
+  h2 > a:hover{
+    text-decoration: underline;
   }
 }
 
@@ -20,11 +31,32 @@
 }
 
 .n42-article{
-  h1{
-    font-size: 3em;
+  h1,h2,h3{
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+    margin-left: -1.5px;
   }
+  h2,h3{
+    margin-top: 1.1em;
+    margin-bottom: 0.2em;
+  }
+  h1{
+    font-size: 2em;
+    line-height: 1.1;
+  }
+
+  h2{
+    font-size: 1.8em;
+  }
+
   h3{
     font-size: 1.4em;
+  }
+
+  p{
+    font-family: "RobotoSlab-Light", serif;
+    font-weight: 300;
+    margin-top: 0.2em;
   }
   // color: black;
   :not(pre) > code{
@@ -45,6 +77,8 @@
   }
   .highlight{
     pre {
+      margin-top: 2.1em;
+      margin-bottom: 2.1em;
       padding: 1em;
       background-color: #f5f2f0;
     }
