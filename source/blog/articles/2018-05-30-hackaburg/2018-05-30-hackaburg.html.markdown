@@ -1,6 +1,7 @@
 ---
 title: Hackaburg 2018
-summary: "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you're unfamiliar with the concept of a hackathon: It is basically a big get-together where we use caffeine in various forms to produce a prototype for a product over a short timespan, typically a weekend."
+summary: "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you're unfamiliar with the concept of a hackathon: It is basically a big get-together where we use caffeine in various forms to produce a prototype for a product over a short timespan, typically a weekend. You get to work on new technologies with friends and soon-to-be friends and in the end, you present your product to the whole crowd and a jury who rewards the best products."
+headerImage: '2018-05-30-hackaburg/assets/Team.jpeg'
 ---
 
 #3,2,1 ... Hack!

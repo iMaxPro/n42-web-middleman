@@ -1,6 +1,5 @@
 ---
-# pageable: false
-# per_page:
+
 ---
 
 = partial "nav"
@@ -13,29 +12,11 @@ div.uk-container.n42-blog
 
       - blog.articles.each do |article|
         div.article-snippet.uk-margin-large-bottom
-          h2.uk-margin-remove-bottom = link_to article.title, article
+          div.uk-cover-container
+            canvas width="400" height="200"
+            img src="/blog/articles/#{article.data['headerImage']}" uk-cover=''
+          h2.uk-margin-remove-bottom.uk-margin-small-top = link_to article.title, article
           p.uk-margin-remove-top.uk-margin-remove-bottom.time = article.date.strftime('%b %e, %Y')
           = link_to article do
             p
               = article.data['summary']
-
-    / - if paginate && num_pages > 1
-    /   p Page #{page_number} of #{num_pages}
-    /
-    /   - if prev_page
-    /     p
-    /       = link_to 'Previous page', prev_page
-    /
-    / - page_articles.each_with_index do |article, i|
-    /   h2
-    /     = link_to article.title, article
-    /     span
-    /       = article.date.strftime('%b %e')
-    /       p
-    /         = article.summary
-    /       = link_to 'Read more…', article
-    /
-    / - if paginate
-    /   - if next_page
-    /     p
-    /       = link_to 'Next page', next_page
