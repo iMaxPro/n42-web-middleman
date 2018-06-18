@@ -1,11 +1,12 @@
 ---
 title: Hackaburg 2018
 summary: "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you're unfamiliar with the concept of a hackathon: It is basically a big get-together where we use caffeine in various forms to produce a prototype for a product over a short timespan, typically a weekend. You get to work on new technologies with friends and soon-to-be friends and in the end, you present your product to the whole crowd and a jury who rewards the best products…"
-headerImage: '2018-05-30-hackaburg/assets/Team.jpeg'
+headerImage: '2018-05-30-hackaburg/assets/header_cut.png'
 ---
 _Mai 30, 2018, by [Hans-Martin Schuller](https://number42.de/#team)_
 
 #3,2,1 ... Hack!
+![](assets/header_cut.png)
 
 Last weekend the third annual [Hackaburg](https://hackaburg.de/) hackathon has been held at the [TechBase](https://www.techbase.de/) in Regensburg. If you're unfamiliar with the concept of a hackathon: It is basically a big get-together where we use caffeine in various forms to produce a prototype for a product over a short timespan, typically a weekend. You get to work on new technologies with friends and soon-to-be friends and in the end, you present your product to the whole crowd and a jury who rewards the best products. The last Hackaburgs were hosted at the *University of Applied Sciences* in Regensburg and were targeted at students. I've attended every Hackaburg so far, as I always like exchanging with fellow students who are interested in programming. The last Hackaburgs went pretty well, although I never got to win in a challenge or category. This year, I wanted this to change and persuaded my colleagues Maike and Maxi to join me in my quest for that sweet sweet victory. They also study *Media Computer Science* at the University of Regensburg with me and were just as eager to do well. We wanted to show ourselves (and maybe our senior colleagues, too?) how much we have grown since we started working at Number42. We and about 500 others registered to attend this event and we were elected to be three of the 140 lucky participants of Hackaburg.
 
