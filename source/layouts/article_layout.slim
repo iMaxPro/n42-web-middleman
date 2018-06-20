@@ -6,4 +6,17 @@
           =link_to 'back to overview', '/blog/index.htm'
           div.uk-margin-medium-bottom
           = yield
-          =link_to 'back to overview', '/blog/index.htm'
+          =link_to 'back to overview', '/blog/index.html'
+    div.uk-section
+      div.uk-container.uk-container-small
+        div.uk-grid-match uk-grid=''
+            - blog.articles[0...3].each do |article|
+              div class="uk-width-1-3@s uk-width-1-1"
+                div.n42-article-card
+                  = link_to article do
+                    div.uk-cover-container
+                      canvas width="300" height="150"
+                      img src="/blog/articles/#{article.data['headerImage']}" uk-cover=''
+                  div.n42-card-body
+                    p.uk-margin-remove-bottom = article.date.strftime('%b %e, %Y')
+                    h3.uk-margin-small-top = link_to truncate(article.title, :length => 70), article

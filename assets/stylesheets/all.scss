@@ -45,6 +45,24 @@ a{
   color: $red-color;
 }
 
+.n42-article-card{
+  background-color: white;
+  box-shadow: 2px 2px 8px 1px #0000001f;
+  padding-bottom: 10px;
+  .n42-card-body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  p{
+    font-style: italic;
+    font-size: 1em;
+    text-decoration: none;
+    &:hover{
+      color: black;
+    }
+  }
+}
+
 .n42-icons{
   font-size: 60px;
   color: $red-color;
