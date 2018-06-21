@@ -245,5 +245,5 @@ In the next post of the "Better iOS Projects" series, we will have a look at som
 [8]:	http://ohmyz.sh
 [9]:	https://www.ruby-lang.org/en/
 [10]:	https://en.wikipedia.org/wiki/Bash_(Unix_shell)
-[11]:	https://en.wikipedia.org/wiki/Ruby%5C_(programming%5C_language
+[11]:	https://en.wikipedia.org/wiki/Ruby_(programming_language
 [12]:	https://en.wikipedia.org/wiki/Z_shell
