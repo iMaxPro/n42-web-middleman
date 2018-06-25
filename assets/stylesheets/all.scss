@@ -50,12 +50,16 @@ a{
 }
 
 .n42-article-card{
+  min-height: 250px;
   background-color: white;
   box-shadow: 2px 2px 8px 1px #0000001f;
   padding-bottom: 10px;
   .n42-card-body{
     padding-left: 10px;
     padding-right: 10px;
+    h3:hover{
+      color: #D24335;
+    }
   }
   p{
     font-style: italic;
