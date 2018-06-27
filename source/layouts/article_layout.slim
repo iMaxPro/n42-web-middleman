@@ -11,7 +11,6 @@
       div.uk-container.uk-container-small
         h2.uk-text-center.uk-margin-large-bottom more Number42 tales
         div.uk-grid-match uk-grid=''
-          / - blog.articles[0...3].each do |article|
           - randomArticles(blog.articles, current_article).each do |article|
             div class="uk-width-1-3@s uk-width-1-1"
               = link_to article do
@@ -26,11 +25,9 @@
           div class="uk-width-1-3@s uk-width-1-1"
             a href="/#kontakt"
               div.n42-article-card
-                  / div style="background-color: #f5f4f0;"
-                  /   img src="/images/42.svg" style="max-height: 135px; padding: 5px 0 5px 0;"
-                  div.uk-cover-container style="background-color: #f5f4f0;"
-                    canvas width="300" height="150"
-                    img src="/images/42.svg" uk-cover='' style="max-height: 135px; padding: 5px 0 5px 0;"
+                div.uk-cover-container style="background-color: #f5f4f0;"
+                  canvas width="300" height="150"
+                  img src="/images/42.svg" uk-cover='' style="max-height: 135px; padding: 5px 0 5px 0;"
 
-                  div.n42-card-body
-                    h3.uk-margin-small-top Wenn wir Ihr Interesse geweckt haben, können Sie uns jederzeit Ihre Fragen stellen.
+                div.n42-card-body
+                  h3.uk-margin-small-top Wenn wir Ihr Interesse geweckt haben, können Sie uns jederzeit Ihre Fragen stellen.
