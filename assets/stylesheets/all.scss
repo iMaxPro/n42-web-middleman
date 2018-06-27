@@ -54,16 +54,18 @@ a{
   background-color: white;
   box-shadow: 2px 2px 8px 1px #0000001f;
   padding-bottom: 10px;
+  transition: box-shadow 100ms;
+  &:hover{
+    box-shadow: 4px 4px 12px 3px #0000001f;
+
+  }
   .n42-card-body{
     padding-left: 10px;
     padding-right: 10px;
-    h3:hover{
-      color: #D24335;
-    }
   }
   p{
-    font-style: italic;
-    font-size: 1em;
+    // font-style: italic;
+    font-size: 0.9em;
     text-decoration: none;
     &:hover{
       color: black;
