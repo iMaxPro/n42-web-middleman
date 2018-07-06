@@ -20,7 +20,7 @@ You should not have to use root user permissions via _sudo_ for any of the calls
 
 ## Advanced Usages of rbenv
 
-After we learnt to install and use _rbenv_ and _bundler_ in the previous post of the series "Better iOS Projects", [How to manage the ruby environment of your iOS Project using rbenv](https://number42.de/blog/2018/05/22/rbenv.html), we learnt to install and use _rbenv_ and _bundler_. Now we have a look at some of the more advanced features and pitfalls of using _rbenv_ and _bundler_.
+After we learnt to install and use _rbenv_ and _bundler_ in the previous post of the series "Better iOS Projects", [How to manage the ruby environment of your iOS Project using rbenv](https://number42.de/blog/2018/05/22/rbenv-2018-05-22-rbenv.html), we continue by having a look at some of the more advanced features and pitfalls of using _rbenv_ and _bundler_.
 
 ### How do I use bundler in _ruby_-scripts?
 
