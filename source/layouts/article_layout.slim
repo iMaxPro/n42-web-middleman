@@ -7,9 +7,9 @@
           div.uk-margin-medium-bottom
           = yield
 
-    div.uk-section
+    div.uk-section.uk-section-muted.uk-margin-large-top
       div.uk-container.uk-container-small
-        h2.uk-text-center.uk-margin-large-bottom more Number42 tales
+        h2.uk-margin-large-bottom Other interesting articles
         div.uk-grid-match uk-grid=''
           - randomArticles(blog.articles, current_article).each do |article|
             div class="uk-width-1-3@s uk-width-1-1"
@@ -22,12 +22,14 @@
                     h3.uk-margin-small-top = truncate(article.title, :length => 50)
                     p.uk-margin-remove-bottom = article.date.strftime('%b %e, %Y')
 
-          div class="uk-width-1-3@s uk-width-1-1"
-            a href="/#kontakt"
-              div.n42-article-card
-                div.uk-cover-container style="background-color: #f5f4f0;"
-                  canvas width="300" height="150"
-                  img src="/images/42.svg" uk-cover='' style="max-height: 135px; padding: 5px 0 5px 0;"
-
-                div.n42-card-body
-                  h3.uk-margin-small-top Wenn wir Ihr Interesse geweckt haben, können Sie uns jederzeit Ihre Fragen stellen.
+          / div class="uk-width-1-3@s uk-width-1-1"
+          /   a href="/#kontakt"
+          /     div.n42-article-card
+          /       div.uk-cover-container style="background-color: #f5f4f0;"
+          /         canvas width="300" height="150"
+          /         img src="/images/42.svg" uk-cover='' style="max-height: 135px; padding: 5px 0 5px 0;"
+          /
+          /       div.n42-card-body
+          /         h3.uk-margin-small-top Wenn wir Ihr Interesse geweckt haben, können Sie uns jederzeit Ihre Fragen stellen.
+    div.uk-section
+      h2.uk-text-center.uk-margin-large-bottom get in contact

@@ -58,7 +58,7 @@ page '/*.txt', layout: false
 helpers do
   def randomArticles(articles, currentArticle)
     articles.delete(currentArticle)
-    articles.sample(2)
+    articles.sample(3)
   end
 end
 
