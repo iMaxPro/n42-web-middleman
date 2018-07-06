@@ -17,7 +17,7 @@
                 div.n42-article-card
                   div.uk-cover-container
                     canvas width="300" height="150"
-                    img src="#{article.data['preview_image']}" uk-cover=''
+                    img src="/blog/articles/#{article.data['preview_image']}" uk-cover=''
                   div.n42-card-body
                     h3.uk-margin-small-top = truncate(article.title, :length => 50)
                     p.uk-margin-remove-bottom = article.date.strftime('%b %e, %Y')
