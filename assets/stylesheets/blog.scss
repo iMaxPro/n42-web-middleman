@@ -19,13 +19,24 @@ $red-color: #D24335;
 
   a{
     color: black;
-    &hover{
-      // text-decoration: none;
+    &:hover{
+      text-decoration: none;
     }
   }
 
   h2 > a:hover{
     text-decoration: underline;
+  }
+
+  footer{
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  .n42-call-to-action{
+    a:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -81,6 +92,9 @@ $red-color: #D24335;
   }
   a{
     text-decoration: underline;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   .highlight{
     pre {
@@ -121,7 +135,6 @@ $red-color: #D24335;
     padding-right: 10px;
   }
   p{
-    // font-style: italic;
     font-size: 0.9em;
     text-decoration: none;
     &:hover{
