@@ -1,9 +1,35 @@
 = wrap_layout :layout do
     = partial "nav"
-    div.uk-container.uk-margin-top.uk-margin-bottom
-      div.uk-flex-center uk-grid=''
-        div.n42-article class="uk-width-2-3@l uk-width-3-4@m uk-width-4-5@s uk-width-1-1"
-          =link_to 'back to overview', '/blog/index.htm'
-          div.uk-margin-medium-bottom
-          = yield
-          =link_to 'back to overview', '/blog/index.htm'
+    div.uk-section.n42-section-border
+      div.uk-container.uk-margin-top.uk-margin-bottom
+        div.uk-flex-center uk-grid=''
+          div.n42-article class="uk-width-2-3@l uk-width-3-4@m uk-width-4-5@s uk-width-1-1"
+            =link_to 'back to overview', '/blog/index.html'
+            div.uk-margin-medium-bottom
+            = yield
+
+    div.uk-section.uk-section-muted.n42-section-border
+      div.uk-container.uk-container-small
+        h2.uk-margin-large-bottom You might also want to read
+        div.uk-grid-match uk-grid=''
+          - randomArticles(blog.articles, current_article).each do |article|
+            div class="uk-width-1-3@s uk-width-1-1"
+              = link_to article, :class =>"n42-no-underline" do
+                div.n42-article-card
+                  div.uk-cover-container
+                    canvas width="300" height="150"
+                    img src="/#{article.data['preview_image']}" uk-cover=''
+                  div.n42-card-body
+                    h3.uk-margin-small-top = truncate(article.title, :length => 50)
+                    p.uk-margin-remove-bottom = article.date.strftime('%b %e, %Y')
+
+
+    div.uk-section.n42-section-border.uk-text-center.n42-call-to-action
+      div.uk-container
+        h2 Get in touch
+        p If you have any questions about the article, need some help or just want to talk to us, contact us at:
+        p
+          span.contact.uk-margin-small-bottom.n42-text-red uk-icon="icon: mail; ratio:2"
+          br
+          a href="mailto:info@num42.de" style="color: #D24335;"
+            |info@num42.de

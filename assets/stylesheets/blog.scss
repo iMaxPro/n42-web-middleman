@@ -1,3 +1,4 @@
+$red-color: #D24335;
 .blog{
   h1,h2{
     font-family: "Roboto-Medium";
@@ -17,12 +18,25 @@
   }
 
   a{
-    text-decoration: none;
     color: black;
+    &:hover{
+      text-decoration: none;
+    }
   }
 
   h2 > a:hover{
     text-decoration: underline;
+  }
+
+  footer{
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  .n42-call-to-action{
+    a:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -71,9 +85,16 @@
   }
   em{
     color: black;
+
+  }
+  a>em:hover{
+    color: $red-color;
   }
   a{
     text-decoration: underline;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   .highlight{
     pre {
@@ -92,5 +113,32 @@
     transform: translateX(-50%);
     font-size: 0.8em;
     color: grey;
+  }
+}
+
+.n42-no-underline:hover{
+  text-decoration: none;
+}
+
+.n42-article-card{
+  min-height: 250px;
+  background-color: white;
+  box-shadow: 2px 2px 8px 1px #0000001f;
+  padding-bottom: 10px;
+  transition: box-shadow 100ms;
+  &:hover{
+    box-shadow: 4px 4px 12px 3px #0000001f;
+
+  }
+  .n42-card-body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  p{
+    font-size: 0.9em;
+    text-decoration: none;
+    &:hover{
+      color: black;
+    }
   }
 }
