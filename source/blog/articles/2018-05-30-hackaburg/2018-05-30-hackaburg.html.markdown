@@ -49,3 +49,6 @@ In the end, we won the newspaper's special challenge, because it was what they w
 *From left: Maike, Maxi, Andrea Rieder (the representative of the MZ) and Hans-Martin, yours truly. Image: Facebook.com/Hackaburg*
 
 We had a great time together, worked from early in the morning up until after midnight. We had our lows, where morale was fading doing tedious tasks like creating fake Instagram posts and tweets to fill our backend with believable dummy data. We had our highs, where morale was brought back by the good old tunes of Taylor Swift. We will return next year.
+
+## Acknowledgments
+Thanks, as always, to [Melanie Kloss](https://number42.de/#team) for the great banner image.

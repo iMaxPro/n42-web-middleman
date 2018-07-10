@@ -145,3 +145,11 @@ fi
 * __ruby-build:__ a tool to install ruby versions
 * __ruby:__ a [programming language](https://en.wikipedia.org/wiki/Ruby_\(programming_language)
 * __zsh:__ the [Z Shell](https://en.wikipedia.org/wiki/Z_shell)
+
+## Acknowledgments
+Thanks, as always, to [Melanie Kloss](https://number42.de/#team) for the great banner image.
+
+## Everything from the series 'Better iOS Projects':
+- [How to manage the ruby environment of your iOS project using rbenv](https://number42.de/blog/2018/05/22/rbenv-2018-05-22-rbenv.html)
+- [How to manage your tooling with mint](https://number42.de/blog/2018/07/03/mint-2018-07-03-mint.html)
+- [Getting (nearly) rid of Xcodeproject - A (not so) short Introduction to Xcodegen](https://number42.de/blog/1970/01/01/xcodegen-1970-01-01-xcodegen.html)
