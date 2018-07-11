@@ -73,7 +73,7 @@ a{
 
 .n42-hero-text{
   left: 10%;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   position: absolute;
 }
@@ -135,16 +135,18 @@ body {
   height: 700px;
   position: relative;
   h1 {font-size: 4.2em; margin: 0}
+  h1.lead{font-size: 6em;}
 }
 
 @media (max-width: 1920px){
   #cover {
-    height: 700px;
+    height: 600px;
     h1{font-size: 3em;}
+    h1.lead{font-size: 4em;}
   }
   .n42-hero-text{
     left: 10%;
-    top: 60%;
+    top: 50%;
   }
 }
 
@@ -152,8 +154,9 @@ body {
   #cover {
     background: url(/images/cover_l.jpg) no-repeat center;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     h1{font-size: 2.2em;}
+    h1.lead{font-size: 3em;}
   }
   .n42-hero-text{
     left: 7%;
@@ -167,6 +170,7 @@ body {
     background-size: cover;
     height: 500px;
     h1{font-size: 1.8em;}
+    h1.lead{font-size: 2.6em;}
   }
   .n42-hero-text{
     left: 3%;
@@ -178,11 +182,12 @@ body {
     background: url(/images/cover_s.jpg) no-repeat center;
     background-size: cover;
     height: 350px;
-    h1{font-size: 1.5em; margin: 0.7em;}
+    h1{font-size: 1.5em;}
+    h1.lead{font-size: 2.2em;}
   }
   .n42-hero-text{
     left: 3%;
-    top: 66%;
+    top: 50%;
   }
   br.with_margin {font-size: 35px !important;}
 }
@@ -191,7 +196,8 @@ body {
     background: url(/images/cover_xs.jpg) no-repeat center;
     height: 200px;
     background-size: cover;
-    h1{font-size: 1.2em; margin: 0.5em;}
+    h1{font-size: 1.2em;}
+    h1.lead{font-size: 1.6em;}
   }
   .n42-hero-text{
     left: 0%;
