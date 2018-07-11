@@ -11,11 +11,11 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     - if current_page.data.robots.present?
       meta name="robots" content=current_page.data.robots
 
-    meta property="og:url" content= current_page.data.preview_url
+    meta property="og:url" content= "https://www.number42.de/#{current_page.data.preview_url}"
     meta property="og:type" content= current_page.data.preview_type
     meta property="og:title" content= current_page.data.title
     meta property="og:description" content= current_page.data.preview_description
-    meta property="og:image" content= current_page.data.preview_image
+    meta property="og:image" content= "https://www.number42.de/#{current_page.data.preview_image}"
 
     = stylesheet_link_tag "main.bundle"
     = javascript_include_tag "main.bundle"

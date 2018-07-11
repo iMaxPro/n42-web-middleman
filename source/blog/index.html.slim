@@ -15,7 +15,7 @@ div.uk-container.n42-blog
           = link_to article do
             div.uk-cover-container
               canvas width="400" height="200"
-              img src="#{article.data['preview_image']}" uk-cover=''
+              img src="https://www.number42.de/#{article.data['preview_image']}" uk-cover=''
             h2.uk-margin-remove-bottom.uk-margin-small-top = link_to article.title, article
             p.uk-margin-remove-top.uk-margin-remove-bottom.time = article.date.strftime('%b %e, %Y')
             = link_to article do

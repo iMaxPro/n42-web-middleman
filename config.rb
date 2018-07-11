@@ -20,9 +20,9 @@ activate :external_pipeline,
 
 activate :blog do |blog|
   blog.prefix = "blog"
-  blog.sources = "articles/{year}-{month}-{day}-{title}/post.html"
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
   blog.layout = "article_layout"
-  blog.permalink = "/{year}/{month}/{day}/{title}.html"
+  # blog.permalink = "/{year}/{month}/{day}/{title}.html"
   # blog.paginate = true
   # blog.page_link = "p{num}"
   # blog.per_page = 2
@@ -55,11 +55,12 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def randomArticles(articles, currentArticle)
+    articles.delete(currentArticle)
+    articles.sample(3)
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
