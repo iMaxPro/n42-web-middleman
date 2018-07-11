@@ -134,18 +134,18 @@ body {
   background-size: cover;
   height: 700px;
   position: relative;
-  h1 {font-size: 4.2em; margin: 0}
-  h1.lead{font-size: 6em;}
+  h1 {font-size: 4em; margin: 0}
+  h1.lead{font-size: 6.5em;}
 }
 
 @media (max-width: 1920px){
   #cover {
     height: 600px;
-    h1{font-size: 3em;}
-    h1.lead{font-size: 4em;}
+    h1{font-size: 2.6em;}
+    h1.lead{font-size: 5.2em;}
   }
   .n42-hero-text{
-    left: 10%;
+    left: 7%;
     top: 50%;
   }
 }
@@ -155,8 +155,8 @@ body {
     background: url(/images/cover_l.jpg) no-repeat center;
     background-size: cover;
     height: 500px;
-    h1{font-size: 2.2em;}
-    h1.lead{font-size: 3em;}
+    h1{font-size: 2.5em;}
+    h1.lead{font-size: 4.7em;}
   }
   .n42-hero-text{
     left: 7%;
@@ -170,7 +170,7 @@ body {
     background-size: cover;
     height: 500px;
     h1{font-size: 1.8em;}
-    h1.lead{font-size: 2.6em;}
+    h1.lead{font-size: 3em;}
   }
   .n42-hero-text{
     left: 3%;
@@ -182,11 +182,11 @@ body {
     background: url(/images/cover_s.jpg) no-repeat center;
     background-size: cover;
     height: 350px;
-    h1{font-size: 1.5em;}
-    h1.lead{font-size: 2.2em;}
+    h1{font-size: 1.3em;}
+    h1.lead{font-size: 2.6em;}
   }
   .n42-hero-text{
-    left: 3%;
+    left: 0%;
     top: 50%;
   }
   br.with_margin {font-size: 35px !important;}
@@ -196,12 +196,12 @@ body {
     background: url(/images/cover_xs.jpg) no-repeat center;
     height: 200px;
     background-size: cover;
-    h1{font-size: 1.2em;}
-    h1.lead{font-size: 1.6em;}
+    h1{font-size: 1em;}
+    h1.lead{font-size: 2em;}
   }
   .n42-hero-text{
     left: 0%;
-    top: 52%;
+    top: 45%;
   }
   br.with_margin {font-size: 30px !important;}
 }
