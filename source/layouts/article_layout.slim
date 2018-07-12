@@ -1,5 +1,8 @@
 = wrap_layout :layout do
     = partial "nav"
+    script type="application/ld+json"
+      = current_page.data['structuredData']
+
     div.uk-section.n42-section-border
       div.uk-container.uk-margin-top.uk-margin-bottom
         div.uk-flex-center uk-grid=''
