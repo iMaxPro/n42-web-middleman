@@ -29,7 +29,7 @@ structuredData: '{
       "url": "https://www.number42.de/images/logo.png"
     }
   },
-  "description": "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you're unfamiliar with the concept of a hackathon: It is basically a big get-together..."
+  "description": "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you are unfamiliar with the concept of a hackathon: It is basically a big get-together..."
 }'
 ---
 _Mai 30, 2018, by [Hans-Martin Schuller](https://number42.de/#team)_
