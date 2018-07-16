@@ -1,10 +1,36 @@
 ---
 title: "Better iOS Projects: Advanced Usages of rbenv"  
 #open graph metadata for facebook
-preview_url: "blog/2018/06/11/2018-06-11-advancedrbenv.html"
+preview_url: "blog/2018/06/11/advancedrbenv-2018-06-11-advancedrbenv.html"
 preview_type: article
 preview_description: 'In the series "Better iOS Projects", we have a look at the various tools and environments that are useful to have a more convenient and efficient handling of iOS Projects. After we learnt to install and use rbenv and bundler in the previous post of the series "Better iOS Projects", "How to manage the ruby environment of your iOS Project using rbenv", we learnt to install and use rbenv and bundler. Now we have a look at some of the more advanced features and pitfalls of using rbenv and bundler…'
 preview_image: "blog/articles/2018-06-11-advancedRbenv/assets/Ruby_1_cut.jpg"
+structuredData: '{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.number42.de/blog/2018/06/11/advancedrbenv-2018-06-11-advancedrbenv.html"
+  },
+  "headline": "Better iOS Projects: Advanced Usages of rbenv",
+  "image": ["https://www.number42.de/blog/articles/2018-06-11-advancedRbenv/assets/Ruby_1_cut.jpg"
+   ],
+  "datePublished": "2018-06-11T08:00:00+08:00",
+  "dateModified": "2018-06-11T08:00:00+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "Wolfgang Lutz"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Number42",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.number42.de/images/logo.png"
+    }
+  },
+  "description": "In the series Better iOS Projects, we have a look at the various tools and environments that are useful to have a more convenient and efficient handling of iOS Projects. After we learnt to install and use rbenv and bundler in the previous post of the series Better iOS Projects, How to manage the ruby environment of your iOS Project using rbenv, we learnt to install and use rbenv and bundler. Now we have a look at some of the more advanced features and pitfalls of using rbenv and bundler…"
+}'
 ---
 _June 11, 2018, by [Wolfgang Lutz](https://number42.de/#team)_
 

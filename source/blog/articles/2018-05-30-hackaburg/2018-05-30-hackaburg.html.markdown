@@ -1,10 +1,36 @@
 ---
 title: Hackaburg 2018
 #open graph metadata for facebook
-preview_url: "blog/2018/05/30/2018-05-30-hackaburg.html"
+preview_url: "blog/2018/05/30/hackaburg-2018-05-30-hackaburg.html"
 preview_type: article
 preview_description: "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you're unfamiliar with the concept of a hackathon: It is basically a big get-together where we use caffeine in various forms to produce a prototype for a product over a short timespan, typically a weekend. You get to work on new technologies with friends and soon-to-be friends and in the end, you present your product to the whole crowd and a jury who rewards the best products…"
 preview_image: 'blog/articles/2018-05-30-hackaburg/assets/header_cut.png'
+structuredData: '{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.number42.de/blog/2018/05/30/hackaburg-2018-05-30-hackaburg.html"
+  },
+  "headline": "Hackaburg 2018",
+  "image": ["https://www.number42.de/blog/articles/2018-05-30-hackaburg/assets/header_cut.png"
+   ],
+  "datePublished": "2018-05-30T08:00:00+08:00",
+  "dateModified": "2018-05-30T08:00:00+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "Hans-Martin Schuller"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Number42",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.number42.de/images/logo.png"
+    }
+  },
+  "description": "Last weekend the third annual Hackaburg hackathon has been held at the TechBase in Regensburg. If you are unfamiliar with the concept of a hackathon: It is basically a big get-together..."
+}'
 ---
 _Mai 30, 2018, by [Hans-Martin Schuller](https://number42.de/#team)_
 
